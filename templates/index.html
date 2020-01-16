@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../static/index/css/CreateChannel.css" />
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/4e469a0b89.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block title %}
+    Flack Chat - Create New Channel
+{% endblock %}
+
+{% block content %}
+    <div id="box-container">
+        <div id="box-window">
+                <div class="container text-center">
+                    <h1 class="create_title">Create Room</h1>
+                    <form action="/create" method="post">
+                        <div class="form-group create-input">
+                            <input type="text" class="form-control" name="channel" id="channel" autocomplete="off" placeholder="Room Name">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg d-block mx-auto px-5">Create</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <a id="logout" href="/logout" class="logout_logo"><i class="fas fa-sign-out-alt"></i></a>
+    
+{% endblock %}

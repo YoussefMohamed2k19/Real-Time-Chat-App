@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="../static/FlackLogo.png">
+        <!-- MY CSS -->
+        
+        <!-- JQUERY (First) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <!-- Socket IO JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.slim.js"></script>
+
+        {% block head %}
+        {% endblock %}
+        
+        <title>
+          Project 2: {% block title %}{% endblock %}
+        </title>
+    </head>
+
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+
+</html>

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #dbe0f9;
+	font-family: 'Roboto', sans-serif;
+}
+
+body .svg-top {
+	position: absolute;
+	top: -900px;
+	right: -300px;
+}
+
+body .svg-bottom {
+	position: absolute;
+	bottom: -500px;
+	left: -200px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.container .wrapper {
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 20px;
+	width: 350px;
+	z-index: 1;
+}
+
+.container .wrapper header {
+	margin-bottom: 40px;
+}
+
+.container .wrapper header .logo {
+	text-align: center;
+}
+
+.container .wrapper header .logo img {
+	width: 100px;
+}
+
+.container .wrapper header h1 {
+	color: #6065d9;
+	font-size: 35px;
+	font-weight: 500;
+	margin-bottom: 0;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.container .wrapper header p {
+	color: #6065d9;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+
+.container .wrapper .main-content .line {
+	width: 100%;
+	height: 2px;
+	background-color: #999 55;
+}
+
+.container .wrapper .main-content button {
+	background: linear-gradient(to right, #6065d9, #17d7fa);
+	border: none;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
+	display: block;
+	width: 75%;
+	height: 50px;
+	margin: 0 auto;
+	outline: none;
+	cursor: pointer;
+}
+
+.container .wrapper footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 60px;
+}
+
+.container .wrapper footer p {
+	margin: 0;
+	font-weight: 100;
+}
+
+.container .wrapper footer p a {
+	color: #6065d9;
+	text-decoration: none;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+	.wrapper {
+		margin: 0 10px !important;
+		padding: 30px;
+	}
+	.wrapper header h1 {
+		font-size: 30px;
+	}
+}
+
+.effect-16 {
+	border: 0;
+	padding: 4px 0;
+	border-bottom: 1px solid #ccc;
+	background-color: transparent;
+}
+
+.effect-16~.focus-border {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: -webkit-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+	transition: 0.4s;
+}
+
+.effect-16:focus~.focus-border,
+.has-content.effect-16~.focus-border {
+	width: 100%;
+	transition: 0.4s;
+}
+
+.effect-16~label {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 9px;
+	color: #aaa;
+	transition: 0.3s;
+	z-index: -1;
+	letter-spacing: 0.5px;
+}
+
+.effect-16:focus~label,
+.has-content.effect-16~label {
+	top: -16px;
+	font-size: 12px;
+	color: #6065d9;
+	transition: 0.3s;
+}
+
+
+/*= input focus effects css
+=========================== */
+
+:focus {
+	outline: none;
+}
+
+.box {
+	margin: 40px 3%;
+	position: relative;
+}
+
+
+/* necessary to give position: relative to parent. */
+
+input[type="text"] {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #333;
+	width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
+	body {
+		position: relative;
+	}
+	.svg-top svg {
+		width: 1700px;
+	}
+	.svg-bottom svg {
+		width: 1500px;
+		height: 800px;
+	}
+	.container .wrapper {
+		padding: 40px;
+		background-color: #fff;
+		border-radius: 20px;
+		/* width: 350px; */
+		z-index: 1;
+	}
+}
