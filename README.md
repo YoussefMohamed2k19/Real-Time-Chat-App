@@ -1,3 +1,7 @@
-# Project 2
+# Flask Project
 
-Web Programming with Python and JavaScript
+Real Time Chat App with Socket.io
+
+Live : https://flackbeta.herokuapp.com/
+
+Youtube Video : https://youtu.be/IPugGBo3sVQ
