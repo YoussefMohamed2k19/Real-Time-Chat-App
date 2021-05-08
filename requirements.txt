@@ -21,7 +21,7 @@ cryptography==2.7
 defusedxml==0.6.0
 Django==3.0.3
 dnspython==1.16.0
-eventlet==0.25.1
+eventlet==0.31.0
 Flask==1.0.2
 Flask-Babel==0.12.2
 Flask-Caching==1.8.0
