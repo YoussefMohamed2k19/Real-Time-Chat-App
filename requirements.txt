@@ -7,7 +7,7 @@ asn1crypto==0.24.0
 astroid==2.2.5
 async-timeout==3.0.1
 attrs==19.3.0
-Babel==2.7.0
+Babel==2.9.1
 billiard==3.6.1.0
 bocadillo==0.18.3
 celery==4.4.0
