@@ -10,7 +10,7 @@ attrs==19.3.0
 Babel==2.7.0
 billiard==3.6.1.0
 bocadillo==0.18.3
-celery==4.4.0
+celery==5.2.2
 certifi==2019.9.11
 cffi==1.12.3
 chardet==3.0.4
